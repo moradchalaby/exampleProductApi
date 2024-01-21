@@ -27,4 +27,32 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    /**
+     * Render an exception into an HTTP response.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param Throwable $e
+     * @return \Symfony\Component\HttpFoundation\Response
+     *
+     * @throws Throwable
+     */
+    public function render($request, Throwable $e)
+    {
+        if ($e instanceof \Illuminate\Validation\ValidationException) {
+            return response()->json([
+                'message' => 'The given data was invalid.',
+                'status' => 'error',
+                'errors' => $e->errors(),
+            ], 422);
+        }
+        if($e instanceof \Illuminate\Database\Eloquent\ModelNotFoundException){
+            return response()->json([
+                'message' => 'The given data was invalid.',
+                'status' => 'error',
+                'errors' => 'Product not Found!',
+            ], 404);
+        }
+        return parent::render($request, $e);
+    }
 }
