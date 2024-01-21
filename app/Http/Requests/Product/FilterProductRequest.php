@@ -27,10 +27,10 @@ class FilterProductRequest extends FormRequest
     {
         return [
             //
-            'productName'=>'nullable | min:3 | max:255',
-            'userName'=>'nullable | min:3 | max:255',
-            'userEmail'=>'nullable | min:3 | max:255',
-            'perPage'=>'nullable | integer | min:1 | max:100',
+            'name'=>'nullable | min:3 | max:255',
+            'user_name'=>'nullable | min:3 | max:255',
+            'user_email'=>'nullable | min:3 | max:255',
+            'per_page'=>'nullable | integer | min:1 | max:100',
         ];
     }
 
@@ -42,14 +42,14 @@ class FilterProductRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'productName.min' => 'Product name must be at least 3 characters.',
-            'productName.max' => 'Product name must be at most 255 characters.',
-            'userName.min' => 'User name must be at least 3 characters.',
-            'userName.max' => 'User name must be at most 255 characters.',
-            'userEmail.min' => 'User email must be at least 3 characters.',
-            'userEmail.max' => 'User email must be at most 255 characters.',
-            'perPage.min' => 'Per page must be at least 1.',
-            'perPage.max' => 'Per page must be at most 100.',
+            'name.min' => 'Product name must be at least 3 characters.',
+            'name.max' => 'Product name must be at most 255 characters.',
+            'user_name.min' => 'User name must be at least 3 characters.',
+            'user_name.max' => 'User name must be at most 255 characters.',
+            'user_email.min' => 'User email must be at least 3 characters.',
+            'user_email.max' => 'User email must be at most 255 characters.',
+            'per_page.min' => 'Per page must be at least 1.',
+            'per_page.max' => 'Per page must be at most 100.',
         ];
     }
 
@@ -61,10 +61,10 @@ class FilterProductRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'productName' => 'Product Name',
-            'userName' => 'User Name',
-            'userEmail' => 'User Email',
-            'perPage' => 'Per Page',
+            'name' => 'Product Name',
+            'user_name' => 'User Name',
+            'user_email' => 'User Email',
+            'per_page' => 'Per Page',
         ];
     }
 
@@ -76,10 +76,10 @@ class FilterProductRequest extends FormRequest
     public function filters(): array
     {
         return [
-            'productName'=>'trim|escape|strip_tags',
-            'userName'=>'trim|escape|strip_tags',
-            'userEmail'=>'trim|escape|strip_tags',
-            'perPage'=>'trim|escape|strip_tags',
+            'name'=>'trim|escape|strip_tags',
+            'user_name'=>'trim|escape|strip_tags',
+            'user_email'=>'trim|escape|strip_tags',
+            'per_page'=>'trim|escape|strip_tags',
         ];
     }
 
@@ -92,8 +92,8 @@ class FilterProductRequest extends FormRequest
     {
        return [
             'name' => $this->name,
-            'user_name' => $this->userName,
-            'user_email' => $this->userEmail,
+            'user_name' => $this->user_name,
+            'user_email' => $this->user_email,
             'per_page' => $this->perPage,
 
         ];
