@@ -1,14 +1,17 @@
-# Genel Bakış
-
----
-
-
 # ExampleProductApi
-
-## Genel BAkış
+---
+## Genel Bakış
 
 ExampleProductApi, kullanıcıların ürün bilgilerini yönetmelerine olanak tanıyan bir RESTful API'dir.
 
+## Ne Yaptık?
+
+- Mail gönderme işlemi için **Laravel Mail** yapısı ve **Event/Listener** Yapısını kullandık.
+- Action Log kayıtları için Laravel **Observer** yapısını kullandık.
+- Aşırı yüklenmeyi ve Botları engellemek adına Laravel **RateLimiter** yapısını kullandık.
+- Api validation işlemleri için Laravel **Request** yapısını kullandık.
+- Api response işlemleri için Laravel **Resource** yapısını kullandık.
+  
 ## Özellikler
 
 - **Ürün Listeleme:** Kullanıcılar, tüm ürünleri listeleyebilirler.
