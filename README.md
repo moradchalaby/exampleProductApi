@@ -90,7 +90,7 @@ API'yi kullanabilmek için aşağıdaki adımları izleyin:
 <a name="section-1.8"></a>
 ## 8. **Dökümantasyon sayfası:**
    ```http
-    http://localhost:8000
+    http://localhost:8000/docs
    ```
     
 ---
