@@ -40,7 +40,7 @@ Authorization: Bearer your-access-token //Varsayılan Token Test User için: you
 
 ## Kurulum
 
-- [Gerekli Bağımlılıklar][#section-1.1]
+- [Gerekli Bağımlılıklar](#Gerekli Bağımlılıklar)
 - [Depoyu Klonla](#section-1.2)
 - [Composer ile Bağımlılıkları Yükle](#section-1.3)
 - [Ortam Dosyasını Ayarla](#section-1.4)
