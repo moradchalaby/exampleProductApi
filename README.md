@@ -40,7 +40,7 @@ Authorization: Bearer your-access-token //Varsayılan Token Test User için: you
 
 ## Kurulum
 
-- [Gerekli Bağımlılıklar](#section-1.1)
+- [Gerekli Bağımlılıklar][#section-1.1]
 - [Depoyu Klonla](#section-1.2)
 - [Composer ile Bağımlılıkları Yükle](#section-1.3)
 - [Ortam Dosyasını Ayarla](#section-1.4)
@@ -51,8 +51,8 @@ Authorization: Bearer your-access-token //Varsayılan Token Test User için: you
 
 API'yi kullanabilmek için aşağıdaki adımları izleyin:
 
-<a name="section-1.1"></a>
-1. **Gerekli Bağımlılıklar:**
+
+[#section-1.1]:1. **Gerekli Bağımlılıklar:**
     - PHP 7.3 veya daha üstü.
     - [Composer](https://getcomposer.org/) yüklü olmalı.
 
