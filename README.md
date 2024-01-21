@@ -94,7 +94,8 @@ API'yi kullanabilmek için aşağıdaki adımları izleyin:
    ```
     
 ---
-
+# Api Uç Noktaları
+---
 # Authentication
 
 ---
