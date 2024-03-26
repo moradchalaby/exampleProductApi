@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('action');
-            $table->json('data')->nullable();
+            $table->longtext('data')->nullable();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
